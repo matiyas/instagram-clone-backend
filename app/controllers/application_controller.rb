@@ -8,5 +8,6 @@
 # make this as straightforward as possible.
 class ApplicationController < ActionController::API
   include ActionController::MimeResponds
+
   respond_to :json
 end
