@@ -21,7 +21,9 @@ gem 'puma', '~> 4.1'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
-
+gem 'devise', '~> 4.7.1'
+gem 'devise-jwt', '0.6.0'
+gem 'figaro', '~> 1.1.1'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making
 # cross-origin AJAX possible
 # gem 'rack-cors'
@@ -37,8 +39,9 @@ group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
   # Spring speeds up development by keeping your application running in the
   # background. Read more: https://github.com/rails/spring
+  gem 'reek', '~> 5.6.0', require: false
   gem 'rubocop', '~> 0.79.0', require: false
-  gem 'solargraph', '~> 0.38.5'
+  gem 'solargraph'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end

@@ -7,4 +7,6 @@
 # Controller does most of the groundwork for you and uses smart conventions to
 # make this as straightforward as possible.
 class ApplicationController < ActionController::API
+  include ActionController::MimeResponds
+  respond_to :json
 end
